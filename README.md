@@ -140,6 +140,65 @@ The `src/W07` folder focuses on advancing method usage, 2D arrays, method overlo
 
 All Week 07 examples authored by pensyarah and enriched with structured educational headers.
 
+Summary of Week 09 (W09)
+-------------------------
+The `src/W09` folder demonstrates file I/O in text and binary form, resource management styles, and utility wrappers:
+
+- [`W09E01.java`](Exercise2025/src/W09/W09E01.java) — Write 10 random integers (0–1000) to `integer.txt` using text output.
+- [`W09E02.java`](Exercise2025/src/W09/W09E02.java) — Read integers from `integer.txt`, echo the list, and report the maximum value.
+- [`W09E03.java`](Exercise2025/src/W09/W09E03.java) — Write 10 random integers (0–1000) to `integer.dat` in binary using `ObjectOutputStream`.
+- [`W09E04.java`](Exercise2025/src/W09/W09E04.java) — Read integers from `integer.dat`, display them, and compute the average with EOF handling.
+- [`W09E05.java`](Exercise2025/src/W09/W09E05.java) — Encode a string to binary bits in `dataBinary.txt`, then decode back to text (original author: Badrul).
+- [`W09E06.java`](Exercise2025/src/W09/W09E06.java) — `java.io.File` usage demo: path metadata, create/check/delete files and directories, and list contents.
+- [`W09E07.java`](Exercise2025/src/W09/W09E07.java) — Contrast traditional try/finally resource handling with try-with-resources while reading a sample file.
+- [`W09E08.java`](Exercise2025/src/W09/W09E08.java) — Combined text-file workflow: static methods to write random ints to a file and read them back to find the max (E01+E02 in one class).
+- [`W09E09.java`](Exercise2025/src/W09/W09E09.java) — Combined binary-file workflow: static methods to write random ints to a binary file and read/average them (E03+E04 in one class).
+
+Summary of Week 10 (W10)
+-------------------------
+The `src/W10` folder provides a progressive introduction to object-oriented programming in Java, covering classes, encapsulation, and polymorphism concepts:
+
+- [`W10E01.java`](Exercise2025/src/W10/W10E01.java) — Introduction to classes: understanding what a class is, basic structure with instance variables, creating objects, and accessing attributes. Demonstrates the blueprint-object relationship.
+- [`W10E02.java`](Exercise2025/src/W10/W10E02.java) — Instance variables and methods: adding behavior to classes through methods, distinguishing instance vs local variables, methods that use and modify object state.
+- [`W10E03.java`](Exercise2025/src/W10/W10E03.java) — Constructors: special methods for object initialization, constructor syntax (same name as class, no return type), automatic invocation with `new`, and cleaner object creation.
+- [`W10E04.java`](Exercise2025/src/W10/W10E04.java) — Accessor methods (getters): introduction to encapsulation with `private` variables, creating getter methods for controlled read access, naming conventions (`getVariableName()`, `isVariableName()` for booleans).
+- [`W10E05.java`](Exercise2025/src/W10/W10E05.java) — Mutator methods (setters): creating setter methods for controlled write access, data validation in setters, maintaining data integrity, complete encapsulation pattern with getters and setters.
+- [`W10E06.java`](Exercise2025/src/W10/W10E06.java) — Complete class design: bringing together private variables, constructors, getters, setters, and behavior methods in a well-designed Product class following OOP principles.
+- [`W10E07.java`](Exercise2025/src/W10/W10E07.java) — Constructor overloading: multiple constructors with different parameter lists, providing flexibility in object creation, default values, and convenience constructors (e.g., square from one parameter).
+- [`W10E08.java`](Exercise2025/src/W10/W10E08.java) — Method overloading: multiple methods with same name but different parameters (number, type, or order), demonstrates type selection and practical Calculator class examples.
+- [`W10E09.java`](Exercise2025/src/W10/W10E09.java) — Combining constructor and method overloading: practical BankAccount class using both techniques together for maximum flexibility (deposit, withdraw, transfer with optional descriptions).
+- [`W10E10.java`](Exercise2025/src/W10/W10E10.java) — Comprehensive library system: complete application bringing all Week 10 concepts together with Book and Library classes, demonstrating object interactions, encapsulation, overloading, and real-world OOP design.
+
+Summary of Week 11 (W11)
+-------------------------
+The `src/W11` folder focuses on inheritance, overriding, constructors with `super`, access modifiers, and polymorphism:
+
+- [`W11E01.java`](Exercise2025/src/W11/W11E01.java) — Introduction to classes: simple fields, constructor, and instance method for self-introduction.
+- [`W11E02.java`](Exercise2025/src/W11/W11E02.java) — First inheritance example: child `StudentE02` extends parent `PersonE02`, reusing a greeting method.
+- [`W11E03.java`](Exercise2025/src/W11/W11E03.java) — Constructor chaining with `super`: parent runs first, child adds its own setup.
+- [`W11E04.java`](Exercise2025/src/W11/W11E04.java) — Overriding methods: child replaces parent description; dynamic dispatch chooses the child version.
+- [`W11E05.java`](Exercise2025/src/W11/W11E05.java) — Using `super.method()`: extend parent behavior while keeping its output.
+- [`W11E06.java`](Exercise2025/src/W11/W11E06.java) — Protected vs private members: subclasses can call protected methods; private stays inside the class.
+- [`W11E07.java`](Exercise2025/src/W11/W11E07.java) — Comparing access modifiers: public vs protected vs private visibility in practice.
+- [`W11E08.java`](Exercise2025/src/W11/W11E08.java) — Final methods: inherited behaviors that cannot be overridden.
+- [`W11E09.java`](Exercise2025/src/W11/W11E09.java) — Object class methods: overriding `toString()`, `equals()`, and `hashCode()` for readable and comparable objects.
+- [`W11E10.java`](Exercise2025/src/W11/W11E10.java) — Polymorphism with an abstract base: array of shapes calling each specific `area()` implementation.
+
+Summary of Week 12 (W12)
+-------------------------
+The `src/W12` folder continues W10/W11 by combining classes, subclasses, inheritance, polymorphism, overloading/overriding, and Scanner/PrintWriter I/O with basic exception handling:
+
+- [`W12E01.java`](Exercise2025/src/W12/W12E01.java) — Multi-level people hierarchy showing overriding vs overloading with polymorphic calls.
+- [`W12E02.java`](Exercise2025/src/W12/W12E02.java) — Vehicles with super reuse, overriding, and overloaded trip starters.
+- [`W12E03.java`](Exercise2025/src/W12/W12E03.java) — Polymorphic shapes parsed via Scanner, written with PrintWriter using safe resources.
+- [`W12E04.java`](Exercise2025/src/W12/W12E04.java) — Payroll example reusing super logic, overriding pay, and overloading calculations.
+- [`W12E05.java`](Exercise2025/src/W12/W12E05.java) — Bank account with overloaded constructors/methods and statement output via PrintWriter.
+- [`W12E06.java`](Exercise2025/src/W12/W12E06.java) — Abstract resources with overridden load flows and overloaded sources.
+- [`W12E07.java`](Exercise2025/src/W12/W12E07.java) — Messaging notifiers demonstrating polymorphic send plus overloaded variants.
+- [`W12E08.java`](Exercise2025/src/W12/W12E08.java) — Pet hierarchy built from Scanner input, runtime binding of speak, overloaded feeding.
+- [`W12E09.java`](Exercise2025/src/W12/W12E09.java) — Number processing with overriding, overloading, Scanner validation, and PrintWriter output.
+- [`W12E10.java`](Exercise2025/src/W12/W12E10.java) — Capstone grade tasks combining parsing, inheritance, overriding/overloading, and persisted results.
+
 How to run
 ----------
 

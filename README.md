@@ -140,6 +140,20 @@ The `src/W07` folder focuses on advancing method usage, 2D arrays, method overlo
 
 All Week 07 examples authored by pensyarah and enriched with structured educational headers.
 
+Summary of Week 08 (W08)
+-------------------------
+The `src/W08` folder contains capstone exercises combining concepts from W01-W07 through realistic, scenario-based problems. These exercises use procedural programming with static helper methods but do not introduce object-oriented programming:
+
+- [`W08E01.java`](Exercise2025/src/W08/W08E01.java) — Student grade management system: reads student names and grades with input validation, calculates statistics (average, min, max), classifies grades as letter grades (A-F), and displays a formatted report.
+- [`W08E02.java`](Exercise2025/src/W08/W08E02.java) — Inventory management menu system: menu-driven interface using switch statements, manage product stock with parallel arrays, add/remove items with validation, search by product name, displays current inventory.
+- [`W08E03.java`](Exercise2025/src/W08/W08E03.java) — Sales analysis dashboard: analyzes 2D array of weekly sales data (products × days), calculates product and daily statistics (totals, averages, min/max), displays formatted tables and summary reports.
+- [`W08E04.java`](Exercise2025/src/W08/W08E04.java) — Text analysis tool: processes multi-line input to count characters, words, sentences, vowels, and classify character types (uppercase, lowercase, digits), provides averages and detailed breakdown using Character class methods.
+- [`W08E05.java`](Exercise2025/src/W08/W08E05.java) — Number guessing game: computer generates random number (1-100), player guesses with hot/cold feedback, tracks statistics (games played, total guesses, average guesses per game), implements game loop with replay option.
+- [`W08E06.java`](Exercise2025/src/W08/W08E06.java) — Restaurant bill calculator: reads itemized menu with prices, calculates subtotal, applies tax and delivery charges (free for large orders ≥$50), allows tip percentage selection, displays formatted receipt with locale-aware currency formatting.
+- [`W08E07.java`](Exercise2025/src/W08/W08E07.java) — Movie theater seating system: displays 2D grid of theater seats, allows users to book seats with 2D coordinate validation, tracks seat availability (booked vs available), provides occupancy statistics and percentage.
+
+**Pattern**: Each exercise combines multiple W01-W07 concepts in realistic applications using static helper methods for code organization without custom classes.
+
 Summary of Week 09 (W09)
 -------------------------
 The `src/W09` folder demonstrates file I/O in text and binary form, resource management styles, and utility wrappers:
@@ -201,6 +215,28 @@ The `src/W12` folder continues W10/W11 by combining classes, subclasses, inherit
 - [`W12E11.java`](Exercise2025/src/W12/W12E11.java) — Interface implementation with polymorphic product types (Books, Electronics). Demonstrates interface contracts, method overloading, and different tax calculations per type.
 - [`W12E12.java`](Exercise2025/src/W12/W12E12.java) — Advanced polymorphism with abstract classes and inheritance hierarchy. Bank accounts (Savings, Checking) with interest calculation, `super()` constructor chaining, and method overriding.
 - [`W12E13.java`](Exercise2025/src/W12/W12E13.java) — Capstone: combining interfaces, abstract classes, and polymorphism. Fleet management system with multiple interface implementation, abstract methods, method overloading, and runtime polymorphic dispatch. Demonstrates complete OOP patterns with detailed comments.
+- [`W12E14.java`](Exercise2025/src/W12/W12E14.java) — Polymorphism fundamentals: Early Binding vs Late Binding. Demonstrates method overloading (compile-time resolution) with Calculator class and method overriding (runtime resolution) with Animal hierarchy. Shows how JVM uses virtual method tables for dynamic dispatch.
+- [`W12E15.java`](Exercise2025/src/W12/W12E15.java) — Upcasting and safe downcasting with `instanceof`. Shows automatic upcasting of child objects to parent references and demonstrates proper downcasting patterns using `instanceof` checks. Includes practical examples with vehicle fleet analysis.
+- [`W12E16.java`](Exercise2025/src/W12/W12E16.java) — Clone method and Comparable interface. Demonstrates shallow vs deep copying, implements `clone()` for proper object duplication, and implements `Comparable<T>` for natural ordering with multi-level sort criteria (GPA, average score, name). Includes student ranking system.
+- [`W12E17.java`](Exercise2025/src/W12/W12E17.java) — Inner classes: Non-static inner, static nested, local, and anonymous. Shows all four types with practical examples: Transaction inner class accessing outer members, Address static nested class, LoginAttempt local class in method, and Validator anonymous class for event handling.
+
+Summary of Week 13 (W13)
+-------------------------
+The `src/W13` folder focuses on exception handling fundamentals, demonstrating how to catch errors gracefully, create custom exceptions, and manage resources with proper cleanup:
+
+- [`W13E01.java`](Exercise2025/src/W13/W13E01.java) — Basic try-catch exception handling: demonstrates the core mechanism with ArithmeticException from division by zero. Shows how the try block executes normally, exceptions are thrown and caught, and the program continues without crashing. Includes multiple division test cases.
+
+- [`W13E02.java`](Exercise2025/src/W13/W13E02.java) — Multiple catch blocks: handling different exception types (NumberFormatException, ArrayIndexOutOfBoundsException, ArithmeticException, Exception) with proper ordering from specific to general. Shows that only the first matching catch block executes and demonstrates catch block order importance.
+
+- [`W13E03.java`](Exercise2025/src/W13/W13E03.java) — Custom exception classes and throws keyword: defines InvalidAgeException and InvalidGradeException by extending Exception class. Demonstrates how methods declare `throws` to pass responsibility to callers. Includes voter eligibility checking and scholarship qualification examples showing practical validation use.
+
+- [`W13E04.java`](Exercise2025/src/W13/W13E04.java) — File I/O with exception handling and finally block: uses PrintWriter to write files while handling FileNotFoundException. Shows how finally block ALWAYS executes regardless of exception, ensuring proper resource cleanup and preventing file handle leaks. Includes multiple writing examples and student records demo.
+
+- [`W13E05.java`](Exercise2025/src/W13/W13E05.java) — Advanced custom exceptions with data carrying: custom exceptions (InsufficientFundsException, OutOfStockException) carry additional data beyond messages. Demonstrates using getter methods to retrieve exception data for context-aware error handling. Includes realistic banking system and inventory management with detailed error feedback.
+
+- [`W13E06.java`](Exercise2025/src/W13/W13E06.java) — Input validation with custom exceptions: practical validation scenarios with InvalidEmailException, InvalidPasswordException, InvalidPhoneNumberException, and InvalidUsernameException. Demonstrates validation rules (format, length, allowed characters) with comprehensive test cases for emails, passwords, phone numbers, and usernames.
+
+**Pattern**: Week 13 builds robust error handling practices through try-catch, custom exceptions, throws declarations, finally blocks, and resource management for professional-grade Java applications.
 
 
 How to run
